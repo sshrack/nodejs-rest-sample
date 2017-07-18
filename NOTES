@@ -9,8 +9,6 @@ with the Product Owner and/or Development, to ensure consensus.
 * Sorting of the server results is only supported for a single attribute (ie. a
 single 'sort' key per request). This could be extended to support multiple ordered keys, if necessary.
 
-* I wanted to define names for the HTTP return codes (e.g. HTTP_NOT_FOUND for a 404 error), instead of putting numbers in the code. I did not find a good way to define these clearly without putting the names in the global namespace. Need to discuss whether this is acceptable, or if another method is preferred.
-
 * Creates/Updates of server data return a status code. They do not return the actual updated server values. This is the usually accepted REST behavior, but not universal. If there is reason to return the server data on a POST/PUT, this could be considered as a change.
 
 * Both POST and PUT are supported for creating or updating a single server. The usual standard is 'POST' for creation of a new resource, and 'PUT' for updating a resource. Since the code in this case is the same, it didn't seem to make sense to do more work to put in an artificial constraint on which one to allow, so they're both allowed for either.

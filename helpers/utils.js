@@ -5,6 +5,8 @@ const url = require('url');
 //
 // FIXME: See if there's a better way to do this than using
 //  global namespace, that doesn't look really ugly.
+//  (npm has an http-status-codes package.)
+
 HTTP_OK           = 200;
 HTTP_CREATED      = 201;
 HTTP_NO_CONTENT   = 204;
