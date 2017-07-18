@@ -1,0 +1,14 @@
+// This is the userID/password file
+//
+// Should be in the format [USERID] [PASSWORD]
+// with a single space separating USERID and PASSWORD, and one per line.
+// 
+// The passwords are salted with the config.pwd_salt value, and encrypted.
+// Use the 'user_create' script to add new users.
+//
+// Lines beginning with '//' are ignored.
+//
+susan 7663c0925f81f0b179b928530a47e3a8250cda73cc4eaf6136ac4b4814af9589
+jane 4ac7b4a2aaf7822e04f32579fc291b24ddc9319a0d7ace00b7ef0ab025f3fa66
+joe 2fc716f5e26e626ba0f47ecd96ee0878c1e259dc60b24fb81d92a17681a48c13
+edgar dc67a2e43dc710544d63a3ece87f60d7dd85382dd95ffe6a6992b3b963a745b5
