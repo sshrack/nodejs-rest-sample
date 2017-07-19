@@ -21,7 +21,7 @@
    these non-official certificates.)
   
  ##### API Definition
- See the REST API Definition document (provided separately) for specific API definitions.
+ See the REST API Definition document, found in docs/API.md, for specific API definitions.
  Here is a synopsis:
 
  **Login: /login**

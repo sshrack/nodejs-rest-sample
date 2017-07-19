@@ -35,12 +35,7 @@ Takes a user ID as input. Logs the specified user out of the REST service, inval
             "userid" : [USER ID],
         }
 ##### Response:
-###### Content-Type: 
-        application/json
-###### Body: 
-    	{	
-            "session" : [SESSIONID]
-    	}
+        '200 OK' status with empty response body.
 
 #### LIST SERVERS:
 Lists the currently configured servers. Supports sorting by server fields and paging of results.
@@ -50,7 +45,7 @@ Lists the currently configured servers. Supports sorting by server fields and pa
 ###### Supported Method(s): 
         GET
 ###### Supported Query Parameters:
-		sort=[SORTKEY][,[asc|desc]]
+	sort=[SORTKEY][,[asc|desc]]
             -	Optional parameter; if specified results are sorted by [SORTKEY] server value; ascending by 
             default. Descending if ',desc' is specified.
             -	Only one sortkey is supported
@@ -152,14 +147,14 @@ Create or modify the specified server.
 ###### Content-Type: 
         application/json
 ###### Body: 
-    	{	
+        {	
           "name":  [NAME],
           "hostname": [HOSTNAME],
           "port": [PORT],
           "username": [USERNAME]
-    	}
+        }
 ##### Response:
-    	'201 Created' if server was newly created. 
+        '201 Created' if server was newly created. 
         '200 OK' if existing server was modified.
 #### DELETE SERVER:
 Delete the specified server.
