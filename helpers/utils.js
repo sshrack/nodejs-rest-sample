@@ -43,7 +43,6 @@ function getJsonPostData(req, callback)
     body += chunk;
   });
 
-  // FIXME: Test with invalid JSON
   req.on('end', () => {
     try {
       var data = JSON.parse(body);
